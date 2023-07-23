@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -84,7 +85,8 @@ DATABASES = {
     
     }
 }
-
+# Tell Django we are using our own user model now
+AUTH_USER_MODEL = 'account.user'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
