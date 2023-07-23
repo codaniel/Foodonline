@@ -62,7 +62,7 @@ class User(AbstractBaseUser):
 
     #Make email field the login name instead of username
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name',]
     objects = UserManager()
 
     def __str__(self):
